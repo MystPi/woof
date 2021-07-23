@@ -38,16 +38,16 @@ from woof import Woof
 
 # Create the Woof class
 lexer = Woof(
-# Token definitions
-{
-    'TOKEN_NAME': r'some regex here'
-},
-# Token map (optional)
-map = {
-    'TOKEN_NAME': some_function_or_lambda_with_one_parameter
-},
-# Ignore regex (optional)
-ignore = r' +'
+    # Token definitions
+    {
+        'TOKEN_NAME': r'some regex here'
+    },
+    # Token map (optional)
+    map = {
+        'TOKEN_NAME': some_function_or_lambda_with_one_parameter
+    },
+    # Ignore regex (optional)
+    ignore = r' +'
 )
 
 # Tokenize a string
