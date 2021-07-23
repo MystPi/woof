@@ -15,8 +15,8 @@ class Woof:
         
     def tokenize(self, string: str):
         import re
-        rest: str = string
-        ret: list = []
+        rest = string
+        ret  = []
         
         while rest:
             match = False
