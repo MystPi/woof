@@ -21,12 +21,12 @@ lexer = Woof({
     'LPAREN': r'\(',
     'RPAREN': r'\)'
 },
+# OPTIONAL: These functions will be called on tokens that get matched, and will pass their re match object as the argument:
 map = {
-    # These functions will be called on tokens that get matched, and will pass their re match object as the argument:
     'FLOAT': lambda x: float(x[0]),
     'INT': lambda x: int(x[0])
 },
-# This will simply ignore the matches of its regex:
+# OPTIONAL: This will simply ignore the matches of its regex:
 ignore = r' ')
 
 print(lexer.pretty(lexer.tokenize('x = 2 * (1 + 3)')))
