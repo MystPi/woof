@@ -43,5 +43,5 @@ class Woof:
         return ret
         
     @classmethod
-    def pretty(cls, lst):
-        return '\n'.join(list(map(str, lst)))
+    def pretty(cls, l: list):
+        return '\n'.join(list(map(str, l)))
