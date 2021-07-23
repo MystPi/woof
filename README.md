@@ -31,3 +31,25 @@ ignore = r' ')
 
 print(lexer.pretty(lexer.tokenize('x = 2 * (1 + 3)')))
 ```
+## Usage
+```py
+# Import woof
+from woof import Woof
+
+# Create the Woof class
+lexer = Woof(
+# Token definitions
+{
+    'TOKEN_NAME': r'some regex here'
+},
+# Token map (optional)
+map = {
+    'TOKEN_NAME': some_function_or_lambda_with_one_parameter
+},
+# Ignore regex (optional)
+ignore = r' +'
+)
+
+# Tokenize a string
+tokens = lexer.tokenize('string')
+```
