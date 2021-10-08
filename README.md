@@ -1,5 +1,5 @@
 # woof
-A lexer that turns your text into tokens. It's similar to YALL except that it's much simpler.
+A lexer that turns your text into tokens.
 
 ## Example
 ```py
